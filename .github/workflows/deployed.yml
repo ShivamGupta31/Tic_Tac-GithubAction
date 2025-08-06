@@ -18,8 +18,8 @@ jobs:
   
       - name: Deploy to container
         run: | 
-          docker stop game
-          docker rm game
+          docker stop tictac
+          docker rm tictac
         
       - name: Update kubeconfig
         run: aws eks --region ap-south-1 update-kubeconfig --name EKS_GithubAction
